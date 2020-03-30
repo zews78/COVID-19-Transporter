@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <title>COVID'19 Transporter</title>
+        <script src="/send_url.js"></script>
+        <link rel= "stylesheet" href="/public/css/style.css">
+      </head>
+<body>
+    
+    <nav class="nav-wrapper black">
+        <div class="container">
+            <a class="brand-logo"><small>COVID'19 Transporter</small></a>
+            <a href="#" class="sidenav-trigger">
+                
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="list">
+            <div class="title">Travel List</div>
+                <a href="/new" class="btn-floating btn-medium waves-effect waves-light black" style="float: right;"><i class="material-icons">add</i></a>
+            <div class="box">
+                <div class="thh">
+                    <span class="th items">ID</span>
+                    <span class="th items">Full Name</span>
+                    <span class="th items">Telephone</span>
+                    <span class="th items">Address</span>
+                    <span class="th items">Travel From</span>
+                    <span class="th items">Travel To</span>
+                    <span class="th items">Date</span>
+                </div>
+                <%item.forEach((it)=>{%>
+                    <div class="tdd">
+                        <span class="td items"><%=it.ID%></span>
+                        <span class="td items"><%=it.Full_Name%></span>
+                        <span class="td items"><%=it.Telephone%></span>
+                        <span class="td items"><%=it.Address%></span>
+                        <span class="td items"><%=it.Travel_From%></span>
+                        <span class="td items"><%=it.Travel_To%></span>
+                        <span class="td items"><%=it.Date%></span>
+                    </div>
+                <%});%>
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+</body>
+</html>
